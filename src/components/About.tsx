@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function About() {
     return (
-        <section className="bg-[#1A4A47] py-20 px-6">
+        <section className="min-h-screen bg-[#1A4A47] py-20 px-6">
             <div className="max-w-6xl mx-auto">
                 <div className="flex flex-col lg:flex-row items-center gap-12">
                     {/* Left Side - Content */}
