@@ -8,7 +8,7 @@ export default function Footer() {
     return (
         <footer className="bg-[#2A2A2A] py-8 px-6 border-t border-gray-600">
             <div className="max-w-6xl mx-auto">
-                <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-white text-sm">
+                <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-white text-sm font-inter">
                     {/* Back to top */}
                     <button
                         onClick={scrollToTop}

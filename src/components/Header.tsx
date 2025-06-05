@@ -9,13 +9,13 @@ export default function Header() {
         <header className="fixed top-0 left-0 right-0 z-50 bg-[#F5DDD1] px-6 py-4">
             <nav className="flex items-center justify-between max-w-6xl mx-auto">
                 <div className="flex items-center space-x-8">
-                    <button className="text-[#1A4A47] hover:text-gray-600 transition-colors">
+                    <button className="text-[#1A4A47] hover:text-gray-600 transition-colors font-inter font-medium">
                         ABOUT
                     </button>
-                    <button className="text-[#1A4A47] hover:text-gray-600 transition-colors">
+                    <button className="text-[#1A4A47] hover:text-gray-600 transition-colors font-inter font-medium">
                         SKILLS
                     </button>
-                    <button className="text-[#1A4A47] hover:text-gray-600 transition-colors">
+                    <button className="text-[#1A4A47] hover:text-gray-600 transition-colors font-inter font-medium">
                         CONTACT
                     </button>
                 </div>

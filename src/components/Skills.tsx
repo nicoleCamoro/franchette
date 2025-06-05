@@ -9,7 +9,7 @@ export default function Skills() {
                             key={index}
                             className="aspect-square bg-white border-2 border-gray-300 rounded-lg flex items-center justify-center hover:shadow-lg transition-shadow"
                         >
-                            <div className="text-gray-500 text-center">
+                            <div className="text-gray-500 text-center font-inter">
                                 <div className="text-4xl mb-2">⚡</div>
                                 <div className="text-sm">Skill {index}</div>
                             </div>
@@ -19,7 +19,7 @@ export default function Skills() {
 
                 {/* Large SKILLS Text */}
                 <div className="text-center">
-                    <h2 className="text-6xl md:text-8xl lg:text-9xl font-light text-[#F5DDD1] stroke-2 stroke-[#1A4A47] opacity-50 tracking-[0.2em]"
+                    <h2 className="text-6xl md:text-8xl lg:text-9xl font-light text-[#F5DDD1] stroke-2 stroke-[#1A4A47] opacity-50 tracking-[0.2em] font-libre-baskerville"
                         style={{
                             WebkitTextStroke: '2px #1A4A47',
                             WebkitTextFillColor: 'transparent'
