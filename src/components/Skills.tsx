@@ -1,6 +1,6 @@
 export default function Skills() {
   return (
-    <section className="min-h-screen bg-[#FFDDCA] py-20 px-6">
+    <section className="min-h-screen bg-beige py-20 px-6">
       <div className="max-w-6xl mx-auto">
         {/* Skills Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
@@ -20,7 +20,7 @@ export default function Skills() {
         {/* Large SKILLS Text */}
         <div className="text-center">
           <h2
-            className="text-6xl md:text-8xl lg:text-9xl font-light text-[#FFDDCA] stroke-2 stroke-[#06222D] opacity-50 tracking-[0.2em] font-libre-baskerville"
+            className="text-6xl md:text-8xl lg:text-9xl font-light text-beige stroke-2 stroke-navy opacity-50 tracking-[0.2em] font-libre-baskerville"
             style={{
               WebkitTextStroke: "2px #06222D",
               WebkitTextFillColor: "transparent",

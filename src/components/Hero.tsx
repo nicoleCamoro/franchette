@@ -3,15 +3,15 @@ import heroImage from "@/app/assets/images/image-55.png";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen bg-[#FFDDCA] pt-20 px-6 flex">
+    <section className="min-h-screen bg-beige pt-20 px-6 flex">
       <div className="max-w-7xl mx-auto mt-24 flex flex-col justify-between">
         {/* Main Title */}
         <div className="text-center mb-8">
-          <h1 className="text-5xl md:text-8xl font-bold text-[#06222D] mb-2 font-libre-baskerville tracking-[0.4em]">
+          <h1 className="text-5xl md:text-8xl font-bold text-navy mb-2 font-libre-baskerville tracking-[0.4em]">
             FRANCHETTE
           </h1>
-          <hr className="w-3/5 mx-auto text-[#06222D] my-3.5" />
-          <p className="text-[#06222D] text-lg font-libre-baskerville tracking-[0.4em]">
+          <hr className="w-3/5 mx-auto text-navy my-3.5" />
+          <p className="text-navy text-lg font-libre-baskerville tracking-[0.4em]">
             /fran·shay/
           </p>
         </div>
@@ -21,8 +21,8 @@ export default function Hero() {
           {/* Left Side - Full Stack Developer Label */}
           <div className="lg:order-1">
             <div className="font-extrabold text-4xl font-inter">
-              <div className="text-[#06222D] ">FULL-STACK</div>
-              <div className="bg-[#06222D] text-[#FFDDCA]">DEVELOPER</div>
+              <div className="text-navy ">FULL-STACK</div>
+              <div className="bg-navy text-beige">DEVELOPER</div>
             </div>
           </div>
 
@@ -42,8 +42,8 @@ export default function Hero() {
           {/* Right Side - Community Builder Label */}
           <div className="lg:order-3">
             <div className="font-extrabold text-4xl font-inter">
-              <div className="bg-[#06222D] text-[#FFDDCA]">COMMUNITY</div>
-              <div className="text-[#06222D]">BUILDER</div>
+              <div className="bg-navy text-beige">COMMUNITY</div>
+              <div className="text-navy">BUILDER</div>
             </div>
           </div>
         </div>

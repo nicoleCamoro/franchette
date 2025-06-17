@@ -6,23 +6,23 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#FFDDCA] px-8 py-6">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-beige px-8 py-6">
       <nav className="flex items-center justify-center max-w-6xl mx-auto">
         <div className="flex items-center space-x-8 hidden md:flex justify-between w-full">
-          <button className="text-[#06222D] hover:text-gray-600 transition-colors font-inter font-medium">
+          <button className="text-navy hover:text-gray-600 transition-colors font-inter font-medium">
             ABOUT
           </button>
-          <button className="text-[#06222D] hover:text-gray-600 transition-colors font-inter font-medium">
+          <button className="text-navy hover:text-gray-600 transition-colors font-inter font-medium">
             SKILLS
           </button>
-          <button className="text-[#06222D] hover:text-gray-600 transition-colors font-inter font-medium">
+          <button className="text-navy hover:text-gray-600 transition-colors font-inter font-medium">
             CONTACT
           </button>
         </div>
 
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="w-8 h-8 bg-[#06222D] hover:bg-gray-700 transition-colors flex items-center justify-center flex md:hidden"
+          className="w-8 h-8 bg-navy hover:bg-gray-700 transition-colors flex items-center justify-center flex md:hidden"
         >
           <div className="space-y-1">
             <div className="w-4 h-0.5 bg-white"></div>

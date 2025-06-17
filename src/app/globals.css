@@ -6,6 +6,13 @@
   --font-serif: var(--font-libre-baskerville), Georgia, serif;
   --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Consolas,
     "Liberation Mono", Menlo, monospace;
+
+  --color-navy: #06222d;
+  --color-orange: #c47b5a;
+  --color-beige: #ffddca;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray: #808080;
 }
 
 :root {
