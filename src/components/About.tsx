@@ -11,6 +11,17 @@ export default function About() {
             <h2 className="underline decoration-2 underline-offset-8 text-4xl md:text-5xl font-light text-white mb-2 tracking-wide font-libre-baskerville">
               ABOUT
             </h2>
+            <div className="lg:w-1/2 flex justify-center items-center md:hidden block">
+              <div className="rounded-lg overflow-hidden">
+                <Image
+                  src={aboutImage}
+                  alt="About"
+                  width={320}
+                  height={320}
+                  className="object-cover"
+                />
+              </div>
+            </div>
             <div className="text-white text-base leading-relaxed space-y-4 font-inter">
               <p>
                 Full Stack Developer Franchette brings 8+ years of web
@@ -29,7 +40,7 @@ export default function About() {
           </div>
 
           {/* Right Side - Profile Image */}
-          <div className="lg:w-1/2 flex justify-center items-center">
+          <div className="lg:w-1/2 md:flex justify-center items-center hidden">
             <div className="rounded-lg overflow-hidden">
               <Image
                 src={aboutImage}
