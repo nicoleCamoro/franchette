@@ -1,48 +1,53 @@
-import Image from 'next/image';
+import Image from "next/image";
+import heroImage from "@/app/assets/images/image-55.png";
 
 export default function Hero() {
-    return (
-        <section className="min-h-screen bg-[#F5DDD1] pt-20 px-6">
-            <div className="max-w-6xl mx-auto">
-                {/* Main Title */}
-                <div className="text-center mb-8">
-                    <h1 className="text-5xl md:text-7xl font-light text-[#1A4A47] tracking-[0.2em] mb-2 font-libre-baskerville">
-                        FRANCHETTE
-                    </h1>
-                    <p className="text-[#1A4A47] text-lg tracking-widest font-inter">
-                        /fran·shay/
-                    </p>
-                </div>
+  return (
+    <section className="min-h-screen bg-[#FFDDCA] pt-20 px-6 flex">
+      <div className="max-w-7xl mx-auto mt-24 flex flex-col justify-between">
+        {/* Main Title */}
+        <div className="text-center mb-8">
+          <h1 className="text-5xl md:text-8xl font-bold text-[#06222D] mb-2 font-libre-baskerville tracking-[0.4em]">
+            FRANCHETTE
+          </h1>
+          <hr className="w-3/5 mx-auto text-[#06222D] my-3.5" />
+          <p className="text-[#06222D] text-lg font-libre-baskerville tracking-[0.4em]">
+            /fran·shay/
+          </p>
+        </div>
 
-                {/* Hero Content */}
-                <div className="flex flex-col lg:flex-row items-center justify-center gap-12 mt-16">
-                    {/* Left Side - Full Stack Developer Label */}
-                    <div className="lg:order-1">
-                        <div className="bg-[#1A4A47] text-white px-6 py-4 font-bold text-lg font-inter">
-                            <div>FULL-STACK</div>
-                            <div>DEVELOPER</div>
-                        </div>
-                    </div>
-
-                    {/* Center - Profile Image */}
-                    <div className="lg:order-2 relative">
-                        <div className="w-80 h-96 bg-gray-300 rounded-lg overflow-hidden">
-                            {/* Placeholder for profile image */}
-                            <div className="w-full h-full bg-gray-400 flex items-center justify-center text-gray-600 font-inter">
-                                Profile Image
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Right Side - Community Builder Label */}
-                    <div className="lg:order-3">
-                        <div className="bg-[#1A4A47] text-white px-6 py-4 font-bold text-lg font-inter">
-                            <div>COMMUNITY</div>
-                            <div>BUILDER</div>
-                        </div>
-                    </div>
-                </div>
+        {/* Hero Content */}
+        <div className="flex flex-row items-center gap-12">
+          {/* Left Side - Full Stack Developer Label */}
+          <div className="lg:order-1">
+            <div className="font-extrabold text-4xl font-inter">
+              <div className="text-[#06222D] ">FULL-STACK</div>
+              <div className="bg-[#06222D] text-[#FFDDCA]">DEVELOPER</div>
             </div>
-        </section>
-    );
+          </div>
+
+          {/* Center - Profile Image */}
+          <div className="lg:order-2">
+            <div className="rounded-lg overflow-hidden">
+              <Image
+                src={heroImage}
+                alt="Profile"
+                width={500}
+                height={500}
+                className="object-cover"
+              />
+            </div>
+          </div>
+
+          {/* Right Side - Community Builder Label */}
+          <div className="lg:order-3">
+            <div className="font-extrabold text-4xl font-inter">
+              <div className="bg-[#06222D] text-[#FFDDCA]">COMMUNITY</div>
+              <div className="text-[#06222D]">BUILDER</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
