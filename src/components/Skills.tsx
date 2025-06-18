@@ -3,7 +3,7 @@ import SkillsHeader from "@/app/assets/images/skills-header.svg";
 
 export default function Skills() {
   return (
-    <section className="min-h-screen bg-[#FFF6ED] py-20 relative">
+    <section id="skills" className="min-h-screen bg-[#FFF6ED] py-20 relative">
       <div className="w-full h-full">
         {/* Skills Grid */}
         <div className="flex items-center justify-center min-h-screen mx-auto">

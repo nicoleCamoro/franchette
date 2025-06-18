@@ -4,7 +4,10 @@ export default function Contact() {
   const linktree = "https://linktr.ee/franchette12";
 
   return (
-    <section className="min-h-screen bg-[#2A2A2A] py-20 px-6 flex items-center justify-center">
+    <section
+      id="contact"
+      className="min-h-screen bg-[#2A2A2A] py-20 px-6 flex items-center justify-center"
+    >
       <div className="max-w-6xl mx-auto text-center">
         {/* Contact Heading */}
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-16 leading-relaxed font-libre-baskerville">

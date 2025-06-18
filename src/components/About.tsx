@@ -3,7 +3,7 @@ import aboutImage from "@/app/assets/images/image-65.png";
 
 export default function About() {
   return (
-    <section className="min-h-screen bg-navy py-20 px-6">
+    <section id="about" className="min-h-screen bg-navy py-20 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-12">
           {/* Left Side - Content */}
