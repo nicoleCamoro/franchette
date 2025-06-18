@@ -28,8 +28,8 @@ export default function Skills() {
         <Image
           src={SkillsHeader}
           alt="SKILLS"
-          width={600}
-          height={600}
+          width={800}
+          height={800}
           className="mx-auto"
           priority
         />
