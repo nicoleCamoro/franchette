@@ -6,6 +6,7 @@ const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  style: ["normal", "italic"],
 });
 
 const libreBaskerville = Libre_Baskerville({
@@ -17,7 +18,8 @@ const libreBaskerville = Libre_Baskerville({
 
 export const metadata: Metadata = {
   title: "Franchette - Full-Stack Developer",
-  description: "Portfolio of Franchette, a full-stack developer and community builder",
+  description:
+    "Portfolio of Franchette, a full-stack webdeveloper and community builder",
 };
 
 export default function RootLayout({
