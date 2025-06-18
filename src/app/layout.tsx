@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter, Libre_Baskerville } from "next/font/google";
 import "./globals.css";
 
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -33,6 +35,7 @@ export default function RootLayout({
         className={`${inter.variable} ${libreBaskerville.variable} antialiased`}
       >
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
