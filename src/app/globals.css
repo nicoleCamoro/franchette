@@ -72,6 +72,8 @@ mark {
   transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.tab-animate-bg:hover::after {
+.tab-animate-bg:hover::after,
+.tab-selected::after {
   height: 100%;
+  cursor: pointer;
 }
