@@ -1,5 +1,6 @@
 import Image from "next/image";
 import aboutImage from "@/app/assets/images/image-65.png";
+import mapPin from "@/app/assets/images/map-pin.svg";
 
 export default function About() {
   return (
@@ -11,8 +12,8 @@ export default function About() {
             <h2 className="mb-2 text-4xl font-light tracking-wide text-white underline decoration-2 underline-offset-8 md:text-5xl font-libre-baskerville">
               ABOUT
             </h2>
-            <div className="flex items-center justify-end lg:w-1/2">
-              <div className="overflow-hidden rounded-sm">
+            <div className="flex flex-col items-center justify-end gap-2 lg:w-1/2">
+              <figure className="overflow-hidden rounded-sm">
                 <Image
                   src={aboutImage}
                   alt="About"
@@ -20,22 +21,47 @@ export default function About() {
                   height={400}
                   className="object-cover"
                 />
+                <figcaption className="text-center font-inter mt-2">
+                  Maria Nicole Franchette Camoro Reyes
+                </figcaption>
+              </figure>
+
+              <div className="flex gap-2">
+                <Image
+                  src={mapPin}
+                  alt="Map Pin"
+                  width={20}
+                  height={20}
+                  className="invert"
+                />
+                <p className="text-white font-inter tracking-wide">
+                  Cebu, Philippines
+                </p>
               </div>
             </div>
           </div>
           <div className="space-y-4 text-base leading-relaxed text-white font-inter lg:w-1/2">
             <p>
-              Full Stack Developer Franchette brings 8+ years of web development
-              expertise to every project. She excels in JavaScript, React and
-              Node.js, having successfully delivered 50+ responsive web apps
-              throughout her tenure as Symph. Her code is clean. Her solutions
-              are crisp. Her current goal balances technical excellence with
-              business needs. Franchette specializes in large-scale responsive
+              Full Stack Developer Franchette brings <b>8+ years</b> of web
+              development expertise to every project. She excels in JavaScript,
+              React, Node.js and Cloud Services like GCP, having successfully
+              delivered 50+ responsive web apps throughout her tenure as Symph.
+              Her code is clean. Her solutions are crisp.
+            </p>
+            <p>
+              Her current goal balances technical excellence with business
+              needs. Franchette specializes in large-scale responsive
               applications, seamless APIs, and interactive user interfaces that
-              captivate. She tackles complex problems with simple solutions.
-              Clients value her ability to translate technical concepts into
-              business outcomes, and her talent for collaboration and mentorship
-              are what make an impact.
+              captivate. Clients value her ability to translate technical
+              concepts into business outcomes, and her talent for collaboration
+              and mentorship are what make an impact.
+            </p>
+            <p>
+              When not coding, Franchette is a passionate tech community
+              builder, organizing events and workshops to help others learn and
+              grow. She also enjoys tinkering with things like IoT devices,
+              smart home automation, and explores different hobbies every now
+              and then.
             </p>
           </div>
         </div>
