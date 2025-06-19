@@ -1,6 +1,6 @@
 import Image from "next/image";
 import aboutImage from "@/app/assets/images/image-65.png";
-import mapPin from "@/app/assets/images/map-pin.svg";
+import MapPin from "./icons/MapPin";
 
 export default function About() {
   return (
@@ -27,13 +27,7 @@ export default function About() {
               </figure>
 
               <div className="flex gap-2">
-                <Image
-                  src={mapPin}
-                  alt="Map Pin"
-                  width={20}
-                  height={20}
-                  className="invert"
-                />
+                <MapPin />
                 <p className="text-white font-inter tracking-wide">
                   Cebu, Philippines
                 </p>

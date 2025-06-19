@@ -1,5 +1,6 @@
 import heroImage from "@/app/assets/images/image-55.png";
 import dynamic from "next/dynamic";
+import SoundBtn from "./atoms/SoundBtn";
 
 const Image = dynamic(() => import("next/image"));
 
@@ -13,9 +14,12 @@ export default function Hero() {
             FRANCHETTE
           </h1>
           <hr className="w-3/5 mx-auto text-navy my-3.5" />
-          <p className="text-navy text-lg font-libre-baskerville tracking-[0.4em]">
-            /fran·shay/
-          </p>
+          <div className="flex items-center justify-center gap-1">
+            <p className="text-navy text-lg font-libre-baskerville tracking-[0.4em]">
+              /fran·shay/
+            </p>
+            <SoundBtn />
+          </div>
         </div>
 
         {/* Hero Content */}

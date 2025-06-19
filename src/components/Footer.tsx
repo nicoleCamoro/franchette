@@ -21,7 +21,7 @@ export default function Footer() {
           <div className="text-center md:text-right">
             <p>
               © {new Date().getFullYear()} All Rights Reserved. Design &
-              Developed by Franchette Campon
+              Developed by Franchette Camoro Reyes
             </p>
           </div>
         </div>
