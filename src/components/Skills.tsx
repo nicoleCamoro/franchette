@@ -11,7 +11,7 @@ export default function Skills() {
             {[1, 2, 3, 4].map((index) => (
               <div
                 key={index}
-                className="flex items-center justify-center transition-shadow bg-white border-2 rounded-lg aspect-square border-beige hover:shadow-lg"
+                className="flex items-center justify-center transition-shadow bg-white border-2 rounded-lg aspect-square border-beige hover:shadow-lg scale-none hover:scale-150 transition-all duration-500"
               >
                 <div className="text-center text-gray-500 font-inter">
                   <div className="mb-2 text-4xl">⚡</div>

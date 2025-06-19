@@ -6,7 +6,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="min-h-screen bg-[#2A2A2A] py-20 px-6 flex items-center justify-center"
+      className="min-h-screen bg-[#1e1e1e] py-20 px-6 flex items-center justify-center"
     >
       <div className="max-w-6xl mx-auto text-center">
         {/* Contact Heading */}
