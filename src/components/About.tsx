@@ -3,10 +3,10 @@ import aboutImage from "@/app/assets/images/image-65.png";
 
 export default function About() {
   return (
-    <section id="about" className="min-h-screen px-6 py-20 bg-navy">
-      <div className="max-w-5xl mx-auto">
+    <section id="about" className="min-h-screen px-6 py-2 bg-navy">
+      <div className="max-w-5xl mx-auto h-svh flex items-center">
         {/* Left Side - Content */}
-        <div className="flex flex-col justify-around h-svh">
+        <div className="flex flex-col">
           <div className="flex flex-col justify-between md:flex-row">
             <h2 className="mb-2 text-4xl font-light tracking-wide text-white underline decoration-2 underline-offset-8 md:text-5xl font-libre-baskerville">
               ABOUT

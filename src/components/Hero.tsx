@@ -1,5 +1,7 @@
-import Image from "next/image";
 import heroImage from "@/app/assets/images/image-55.png";
+import dynamic from "next/dynamic";
+
+const Image = dynamic(() => import("next/image"));
 
 export default function Hero() {
   return (
@@ -35,6 +37,7 @@ export default function Hero() {
                 width={500}
                 height={500}
                 className="object-cover"
+                priority
               />
             </div>
           </div>
