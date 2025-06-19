@@ -6,7 +6,7 @@ interface TabsProps {
 }
 
 export default function Tabs({ selectedTab, onTabChange }: TabsProps) {
-  const tabs = ["Frontend", "Backend", "Practices", "Tools"];
+  const tabs = ["Frontend", "Backend", "Tools", "Practices"];
 
   return (
     <div className="flex text-white justify-around font-extrabold text-4xl font-inter font bold">

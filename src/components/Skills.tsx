@@ -15,7 +15,7 @@ type Skill = {
 
 export default function Skills() {
   const [selectedTab, setSelectedTab] = useState(0);
-  const categories: Category[] = ["Frontend", "Backend", "Practices", "Tools"];
+  const categories: Category[] = ["Frontend", "Backend", "Tools", "Practices"];
   const currentSkills = skillsData.skills[categories[selectedTab]] as Skill[];
 
   return (
