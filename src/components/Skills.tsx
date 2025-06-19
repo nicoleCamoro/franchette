@@ -41,7 +41,7 @@ export default function Skills() {
             <Tabs selectedTab={selectedTab} onTabChange={setSelectedTab} />
             <div className="bg-beige p-8 rounded-sm relative">
               {/* Mobile scrollable container */}
-              <div className="md:hidden relative">
+              <div className="lg:hidden relative">
                 <div className="overflow-x-auto scrollbar-hide pb-4">
                   <div className="grid grid-flow-col auto-cols-[250px] grid-rows-2 gap-4 px-4">
                     {currentSkills.map((skill, index) => (
@@ -65,7 +65,7 @@ export default function Skills() {
               </div>
 
               {/* Desktop grid layout */}
-              <div className="hidden md:flex md:flex-wrap gap-6 justify-center">
+              <div className="hidden lg:flex lg:flex-wrap gap-6 justify-center">
                 {currentSkills.map((skill, index) => (
                   <div
                     key={index}
