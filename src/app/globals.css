@@ -40,7 +40,6 @@ body {
   padding: 0;
 }
 
-/* Ensure fonts are loaded properly */
 .font-inter {
   font-family: var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, sans-serif;
@@ -50,8 +49,8 @@ body {
   font-family: var(--font-libre-baskerville), Georgia, serif;
 }
 
-/* Ensure text stroke works cross-browser */
-.text-stroke {
-  -webkit-text-stroke: 2px #06222d;
-  -webkit-text-fill-color: transparent;
+mark {
+  display: inline;
+  background: #4ecdc4;
+  color: #1e1e1e;
 }
