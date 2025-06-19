@@ -13,6 +13,7 @@
   --color-white: #ffffff;
   --color-black: #000000;
   --color-gray: #808080;
+  --color-peach: #fff6ed;
 }
 
 :root {
@@ -53,4 +54,24 @@ mark {
   display: inline;
   background: #4ecdc4;
   color: #1e1e1e;
+}
+
+.tab-animate-bg {
+  position: relative;
+}
+
+.tab-animate-bg::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  background: var(--color-beige);
+  z-index: 0;
+  transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tab-animate-bg:hover::after {
+  height: 100%;
 }
