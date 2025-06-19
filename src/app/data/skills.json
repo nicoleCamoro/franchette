@@ -1,0 +1,45 @@
+{
+    "skills": {
+        "Frontend": [
+            "React.js",
+            "Next.js",
+            "JavaScript",
+            "Redux",
+            "Tailwind CSS",
+            "SCSS",
+            "HTML/CSS"
+        ],
+        "Backend": [
+            "Node.js",
+            "Python (Flask, Webapp2)",
+            "GraphQL",
+            "REST APIs",
+            "PostgreSQL",
+            "MySQL",
+            "NoSQL (Datastore, Firebase)",
+            "Google Cloud Platform",
+            "Firebase",
+            "Supabase"
+        ],
+        "Practices": [
+            "System Design",
+            "Test Driven Development",
+            "Agile Development",
+            "Design Implementation",
+            "Debugging",
+            "Authentication & Authorization",
+            "Microservices Architecture"
+        ],
+        "Tools": [
+            "Docker",
+            "Git & GitHub",
+            "Netlify",
+            "SendGrid",
+            "Jest",
+            "Figma",
+            "Webflow",
+            "Shopify",
+            "NX"
+        ]
+    }
+}

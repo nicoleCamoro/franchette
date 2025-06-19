@@ -1,16 +1,19 @@
 "use client";
-import { useState } from "react";
 
-export default function Tabs() {
+interface TabsProps {
+  selectedTab: number;
+  onTabChange: (index: number) => void;
+}
+
+export default function Tabs({ selectedTab, onTabChange }: TabsProps) {
   const tabs = ["Frontend", "Backend", "Practices", "Tools"];
-  const [selectedTab, setSelectedTab] = useState(0);
 
   return (
     <div className="flex text-white justify-around font-extrabold text-4xl font-inter font bold">
       {tabs.map((tab, index) => (
         <div
           key={tab}
-          onClick={() => setSelectedTab(index)}
+          onClick={() => onTabChange(index)}
           className={`tab-animate-bg px-6 py-2 tracking-wider cursor-pointer relative text-neutral-600 ${
             selectedTab === index ? "tab-selected" : ""
           }`}
