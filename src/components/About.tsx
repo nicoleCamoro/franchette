@@ -5,21 +5,21 @@ import MapPin from "./icons/MapPin";
 export default function About() {
   return (
     <section id="about" className="min-h-screen px-6 py-2 bg-navy">
-      <div className="max-w-5xl mx-auto h-svh flex items-center">
+      <div className="max-w-5xl mx-auto h-vh md:h-svh flex items-center py-10 md:py-0">
         {/* Left Side - Content */}
         <div className="flex flex-col">
           <div className="flex flex-col justify-between md:flex-row">
             <h2 className="mb-2 text-4xl font-light tracking-wide text-white underline decoration-2 underline-offset-8 md:text-5xl font-libre-baskerville">
               ABOUT
             </h2>
-            <div className="flex flex-col items-center justify-end gap-2 lg:w-1/2">
-              <figure className="overflow-hidden rounded-sm">
+            <div className="flex flex-col items-center justify-end gap-2 lg:w-1/2 my-10 md:my-0">
+              <figure className="overflow-hidden rounded-sm flex flex-col items-center">
                 <Image
                   src={aboutImage}
                   alt="About"
                   width={400}
                   height={400}
-                  className="object-cover"
+                  className="object-cover w-40 h-40 md:w-auto md:h-auto"
                 />
                 <figcaption className="text-center font-inter mt-2">
                   Maria Nicole Franchette Camoro Reyes

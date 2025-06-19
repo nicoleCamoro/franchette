@@ -19,7 +19,22 @@ export default function Skills() {
   const currentSkills = skillsData.skills[categories[selectedTab]] as Skill[];
 
   return (
-    <section id="skills" className="min-h-screen bg-peach py-20 relative">
+    <section
+      id="skills"
+      className="min-h-screen bg-peach py-20 md:pt-0 relative"
+    >
+      {/* Skills Header - Mobile (Top) */}
+      <div className="md:hidden w-full flex justify-center mb-10">
+        <Image
+          src={SkillsHeader}
+          alt="SKILLS"
+          width={400}
+          height={400}
+          className="w-[300px]"
+          priority
+        />
+      </div>
+
       <div className="w-full h-full">
         <div className="flex items-center justify-center min-h-screen mx-auto">
           <div className="flex flex-col w-screen md:w-9/12">
@@ -44,8 +59,8 @@ export default function Skills() {
         </div>
       </div>
 
-      {/* Large SKILLS Text */}
-      <div className="absolute right-3.5 bottom-14">
+      {/* Skills Header - Desktop (Bottom) */}
+      <div className="hidden md:block absolute right-3.5 bottom-14">
         <Image
           src={SkillsHeader}
           alt="SKILLS"
