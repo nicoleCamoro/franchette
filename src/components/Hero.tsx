@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="flex flex-col justify-between mx-auto mt-24 max-w-7xl">
         {/* Main Title */}
         <div className="mb-8 text-center">
-          <h1 className="text-3xl md:text-5xl md:text-8xl font-bold text-navy mb-2 font-libre-baskerville tracking-[0.4em]">
+          <h1 className="sm:text-3xl md:text-5xl lg:md:text-8xl font-bold text-navy mb-2 font-libre-baskerville tracking-[0.4em]">
             FRANCHETTE
           </h1>
           <hr className="w-3/5 mx-auto text-navy my-3.5" />

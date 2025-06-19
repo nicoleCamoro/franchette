@@ -3,6 +3,7 @@ import { Inter, Libre_Baskerville } from "next/font/google";
 import "./globals.css";
 
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import Head from "next/head";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -31,6 +32,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+          type="text/css"
+        />
+      </Head>
       <body
         className={`${inter.variable} ${libreBaskerville.variable} antialiased`}
       >

@@ -19,22 +19,22 @@ export default function Contact() {
         {/* Contact Buttons */}
         <div className="flex items-center justify-center relative">
           <Link
-            className="w-60 h-60 bg-[#E8B69A] rounded-full flex items-center justify-center text-[#2A2A2A] font-medium hover:bg-[#D9A583] relative z-10 hover:z-30"
+            className="w-40 h-40 md:w-60 md:h-60 bg-[#E8B69A] rounded-full flex items-center justify-center text-[#2A2A2A] font-medium hover:bg-[#D9A583] relative z-10 hover:z-30"
             href="mailto:nicolecamoro@gmail.com"
           >
-            <div className="text-center text-xl font-inter">
+            <div className="text-center text-smmd:text-xl font-inter">
               <div>SEND</div>
               <div>EMAIL</div>
             </div>
           </Link>
 
           <Link
-            className="w-60 h-60 bg-[#C47B5A] rounded-full flex items-center justify-center text-white font-medium hover:bg-[#B56B4A] relative -ml-8 z-20"
+            className="w-40 h-40 md:w-60 md:h-60 bg-[#C47B5A] rounded-full flex items-center justify-center text-white font-medium hover:bg-[#B56B4A] relative -ml-8 z-20"
             href={linktree}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="text-center text-xl font-inter">
+            <div className="text-center text-sm md:text-xl font-inter">
               <div>CHECK</div>
               <div>LINKS</div>
             </div>
