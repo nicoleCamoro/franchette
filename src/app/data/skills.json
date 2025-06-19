@@ -1,45 +1,167 @@
 {
     "skills": {
         "Frontend": [
-            "React.js",
-            "Next.js",
-            "JavaScript",
-            "Redux",
-            "Tailwind CSS",
-            "SCSS",
-            "HTML/CSS"
+            {
+                "name": "HTML/CSS",
+                "description": "Building semantic, accessible web layouts and styling with modern CSS features",
+                "logo": "devicon-html5-plain"
+            },
+            {
+                "name": "React.js",
+                "description": "Building scalable user interfaces with components and hooks",
+                "logo": "devicon-react-original"
+            },
+            {
+                "name": "Next.js",
+                "description": "Creating full-stack React applications with server-side rendering and API routes",
+                "logo": "devicon-nextjs-original"
+            },
+            {
+                "name": "JavaScript",
+                "description": "Modern ES6+ development with async/await, modules, and functional programming",
+                "logo": "devicon-javascript-plain"
+            },
+            {
+                "name": "Redux",
+                "description": "State management for complex React applications",
+                "logo": "devicon-redux-original"
+            },
+            {
+                "name": "Tailwind CSS",
+                "description": "Utility-first CSS framework for rapid UI development",
+                "logo": "devicon-tailwindcss-plain"
+            },
+            {
+                "name": "SASS",
+                "description": "Advanced CSS preprocessing with variables, mixins, and nested rules",
+                "logo": "devicon-sass-original"
+            }
         ],
         "Backend": [
-            "Node.js",
-            "Python (Flask, Webapp2)",
-            "GraphQL",
-            "REST APIs",
-            "PostgreSQL",
-            "MySQL",
-            "NoSQL (Datastore, Firebase)",
-            "Google Cloud Platform",
-            "Firebase",
-            "Supabase"
+            {
+                "name": "Node.js",
+                "description": "Server-side JavaScript runtime for building scalable network applications",
+                "logo": "devicon-nodejs-plain"
+            },
+            {
+                "name": "Python",
+                "description": "Web development with Flask and Webapp2 frameworks",
+                "logo": "devicon-python-plain"
+            },
+            {
+                "name": "Google Cloud Platform",
+                "description": "Cloud computing services for application deployment and scaling",
+                "logo": "devicon-googlecloud-plain"
+            },
+            {
+                "name": "GraphQL",
+                "description": "Query language for APIs with efficient data fetching",
+                "logo": "devicon-graphql-plain"
+            },
+            {
+                "name": "PostgreSQL",
+                "description": "Advanced relational database with JSON support and scalability",
+                "logo": "devicon-postgresql-plain"
+            },
+            {
+                "name": "MySQL",
+                "description": "Popular open-source relational database management",
+                "logo": "devicon-mysql-plain"
+            },
+            {
+                "name": "NoSQL",
+                "description": "Non-relational databases including Firebase and Google Datastore",
+                "logo": "devicon-mongodb-plain"
+            },
+            {
+                "name": "Supabase",
+                "description": "Open source Firebase alternative with PostgreSQL backend",
+                "logo": "simple-icons:supabase"
+            }
         ],
         "Practices": [
-            "System Design",
-            "Test Driven Development",
-            "Agile Development",
-            "Design Implementation",
-            "Debugging",
-            "Authentication & Authorization",
-            "Microservices Architecture"
+            {
+                "name": "System Design",
+                "description": "Architecting scalable and maintainable software systems",
+                "logo": "fa-solid fa-diagram-project"
+            },
+            {
+                "name": "Test Driven Development",
+                "description": "Writing tests before implementation for better code quality",
+                "logo": "fa-solid fa-vial"
+            },
+            {
+                "name": "Agile Development",
+                "description": "Iterative development with continuous feedback and adaptation",
+                "logo": "fa-solid fa-rotate"
+            },
+            {
+                "name": "Design Implementation",
+                "description": "Translating UI/UX designs into pixel-perfect code",
+                "logo": "fa-solid fa-palette"
+            },
+            {
+                "name": "Debugging",
+                "description": "Identifying and fixing software issues efficiently",
+                "logo": "fa-solid fa-bug"
+            },
+            {
+                "name": "Authentication & Authorization",
+                "description": "Implementing secure user authentication and access control",
+                "logo": "fa-solid fa-lock"
+            },
+            {
+                "name": "Microservices Architecture",
+                "description": "Building distributed systems with independent services",
+                "logo": "fa-solid fa-cubes"
+            }
         ],
         "Tools": [
-            "Docker",
-            "Git & GitHub",
-            "Netlify",
-            "SendGrid",
-            "Jest",
-            "Figma",
-            "Webflow",
-            "Shopify",
-            "NX"
+            {
+                "name": "Docker",
+                "description": "Containerization for consistent development and deployment",
+                "logo": "devicon-docker-plain"
+            },
+            {
+                "name": "Git & GitHub",
+                "description": "Version control and collaborative development",
+                "logo": "devicon-git-plain"
+            },
+            {
+                "name": "Vercel",
+                "description": "cloud platform primarily used for building, deploying, and scaling web applications",
+                "logo": "simple-icons:netlify"
+            },
+            {
+                "name": "SendGrid",
+                "description": "Email delivery service for transactional emails",
+                "logo": "simple-icons:sendgrid"
+            },
+            {
+                "name": "Jest",
+                "description": "JavaScript testing framework with snapshot testing",
+                "logo": "devicon-jest-plain"
+            },
+            {
+                "name": "Figma",
+                "description": "Collaborative interface design and prototyping",
+                "logo": "devicon-figma-plain"
+            },
+            {
+                "name": "Webflow",
+                "description": "Visual development platform for responsive websites",
+                "logo": "simple-icons:webflow"
+            },
+            {
+                "name": "Shopify",
+                "description": "E-commerce platform development and customization",
+                "logo": "devicon-shopify-plain"
+            },
+            {
+                "name": "NX",
+                "description": "Build system for monorepo development",
+                "logo": "simple-icons:nx"
+            }
         ]
     }
 }
