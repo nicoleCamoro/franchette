@@ -21,7 +21,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="min-h-screen bg-peach py-20 md:pt-0 relative"
+      className="md:min-h-screen bg-peach py-20 md:pt-0 relative"
     >
       {/* Skills Header - Mobile (Top) */}
       <div className="md:hidden w-full flex justify-center mb-10">
@@ -36,14 +36,39 @@ export default function Skills() {
       </div>
 
       <div className="w-full h-full">
-        <div className="flex items-center justify-center min-h-screen mx-auto">
+        <div className="flex items-center justify-center md:min-h-screen mx-auto">
           <div className="flex flex-col w-screen md:w-9/12">
             <Tabs selectedTab={selectedTab} onTabChange={setSelectedTab} />
-            <div className=" bg-beige p-8 rounded-sm">
-              <div className="flex flex-wrap gap-6 justify-center">
-                {currentSkills.map((skill) => (
+            <div className="bg-beige p-8 rounded-sm relative">
+              {/* Mobile scrollable container */}
+              <div className="md:hidden relative">
+                <div className="overflow-x-auto scrollbar-hide pb-4">
+                  <div className="grid grid-flow-col auto-cols-[250px] grid-rows-2 gap-4 px-4">
+                    {currentSkills.map((skill, index) => (
+                      <div
+                        key={index}
+                        className="text-start text-white/90 font-inter tracking-wider py-6 px-4 bg-navy rounded-lg shadow-sm h-[140px]"
+                      >
+                        <div className="text-xl font-bold italic mb-2">
+                          {skill.name}
+                        </div>
+                        <p className="text-sm line-clamp-2">
+                          {skill.description}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                {/* Fade edges for mobile scroll */}
+                <div className="absolute left-0 top-0 h-full w-8 bg-gradient-to-r from-beige to-transparent pointer-events-none" />
+                <div className="absolute right-0 top-0 h-full w-8 bg-gradient-to-l from-beige to-transparent pointer-events-none" />
+              </div>
+
+              {/* Desktop grid layout */}
+              <div className="hidden md:flex md:flex-wrap gap-6 justify-center">
+                {currentSkills.map((skill, index) => (
                   <div
-                    key={skill.name}
+                    key={index}
                     className="w-[250px] text-start text-white/90 font-inter tracking-wider py-6 px-4 bg-navy rounded-lg shadow-sm"
                   >
                     {/* <i className={`${skill.logo} text-2xl mb-3 block`}></i> */}
