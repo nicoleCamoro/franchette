@@ -13,8 +13,8 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 px-8 py-6 bg-beige">
-      <nav className="flex items-center justify-center max-w-6xl mx-auto">
+    <header className="fixed top-0 left-0 right-0 z-50 px-4 py-3 md:px-8 md:py-6 bg-beige">
+      <nav className="flex justify-end items-center md:justify-center max-w-6xl mx-auto">
         <div className="flex items-center justify-between hidden w-full space-x-8 md:flex">
           <button
             onClick={() => scrollToSection("home")}

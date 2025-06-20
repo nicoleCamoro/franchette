@@ -6,8 +6,11 @@ const Image = dynamic(() => import("next/image"));
 
 export default function Hero() {
   return (
-    <section id="home" className="flex min-h-screen px-6 pt-20 bg-beige">
-      <div className="flex flex-col justify-between mx-auto md:mt-14 lg:mt-24 max-w-7xl">
+    <section
+      id="home"
+      className="flex min-h-screen px-6 pt-16 md:pt-20 bg-beige"
+    >
+      <div className="flex flex-col justify-evenly md:justify-between mx-auto md:mt-14 lg:mt-24 max-w-7xl">
         {/* Main Title */}
         <div className="mb-8 text-center">
           <h1 className="text-xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-bold text-navy mb-2 font-libre-baskerville tracking-[0.4em]">
