@@ -7,9 +7,9 @@ export default function About() {
     <section id="about" className="min-h-screen px-6 py-2 bg-navy">
       <div className="max-w-5xl mx-auto h-vh md:h-svh flex items-center py-10 md:py-0">
         {/* Left Side - Content */}
-        <div className="flex flex-col">
+        <div className="flex flex-col gap-8  lg:gap-0">
           <div className="flex flex-col justify-between md:flex-row">
-            <h2 className="mb-2 text-4xl font-light tracking-wide text-white underline decoration-2 underline-offset-8 md:text-5xl font-libre-baskerville">
+            <h2 className="mb-2 text-center md:text-left text-4xl font-light tracking-wide text-white underline decoration-2 underline-offset-8 md:text-5xl font-libre-baskerville">
               ABOUT
             </h2>
             <div className="flex flex-col items-center justify-end gap-2 lg:w-1/2 my-10 md:my-0">

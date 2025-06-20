@@ -11,7 +11,7 @@ export default function Tabs({ selectedTab, onTabChange }: TabsProps) {
   return (
     <div className="relative w-full">
       <div className="overflow-x-auto lg:overflow-visible scrollbar-hide">
-        <div className="flex text-white whitespace-nowrap min-w-max lg:min-w-0 lg:justify-around font-extrabold text-xl lg:text-4xl font-inter font-bold px-4 lg:px-0 gap-6 lg:gap-0">
+        <div className="flex text-white whitespace-nowrap min-w-max lg:min-w-0 lg:justify-around font-extrabold text-xl lg:text-2xl xl:text-4xl font-inter font-bold px-4 lg:px-0 gap-6 lg:gap-0">
           {tabs.map((tab, index) => (
             <div
               key={tab}
@@ -20,7 +20,7 @@ export default function Tabs({ selectedTab, onTabChange }: TabsProps) {
                 selectedTab === index ? "tab-selected" : ""
               }`}
             >
-              <span className="absolute -top-1 lg:-top-5 lg:-left-2 z-10 font-black text-red-400 text-lg lg:text-6xl italic">
+              <span className="absolute -top-1 lg:-top-5 lg:-left-2 z-10 font-black text-red-400 text-lg md:text-2xl lg:text-6xl italic">
                 {index + 1}
               </span>
               <span className="relative z-10 italic pl-2">{tab}</span>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import MenuButton from "./atoms/MenuButton";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,34 +28,13 @@ export default function Header() {
                   className="font-medium transition-colors text-navy hover:text-gray-600 font-inter"
                   key={item}
                 >
-                  {item}
+                  {item.toUpperCase()}
                 </button>
               );
             })}
           </div>
 
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="flex items-center justify-center w-8 h-8 transition-colors bg-navy hover:bg-gray-700 md:hidden relative z-50"
-          >
-            <div className="space-y-1">
-              <div
-                className={`w-4 h-0.5 bg-white transition-all duration-300 ${
-                  isMenuOpen ? "rotate-45 translate-y-1.5" : ""
-                }`}
-              ></div>
-              <div
-                className={`w-4 h-0.5 bg-white transition-all duration-300 ${
-                  isMenuOpen ? "opacity-0" : ""
-                }`}
-              ></div>
-              <div
-                className={`w-4 h-0.5 bg-white transition-all duration-300 ${
-                  isMenuOpen ? "-rotate-45 -translate-y-1.5" : ""
-                }`}
-              ></div>
-            </div>
-          </button>
+          <MenuButton isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
         </nav>
       </header>
 
@@ -69,7 +49,7 @@ export default function Header() {
             return (
               <button
                 onClick={() => scrollToSection(item)}
-                className="text-6xl font-bold text-white tracking-wide hover:text-peach transition-colors font-inter"
+                className="ml-8 text-5xl sm:text-6xl font-bold text-white tracking-wide hover:text-peach transition-colors font-inter"
                 key={item}
               >
                 {item.toUpperCase()}
