@@ -29,6 +29,7 @@ export default function Hero() {
             <div className="text-4xl font-extrabold font-inter">
               <div className="text-navy">FULL-STACK</div>
               <div className="bg-navy text-beige">DEVELOPER</div>
+              <div className="text-navy">FOR WEB</div>
             </div>
           </div>
 
@@ -49,6 +50,7 @@ export default function Hero() {
           {/* Right Side - Community Builder Label */}
           <div className="order-2 lg:order-3">
             <div className="flex flex-col items-end text-4xl font-extrabold font-inter md:items-start">
+              <div className="text-navy">TECHNOLOGY</div>
               <div className="bg-navy text-beige">COMMUNITY</div>
               <div className="text-navy">BUILDER</div>
             </div>
